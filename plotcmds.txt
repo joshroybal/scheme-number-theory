@@ -1,0 +1,2 @@
+plot pi(n) and n/logn columns (pi is no. of primes p <= n)
+plot 'emp.dat' using 1:2:xtic(1000), '' using 1:3:xtic(1000)
