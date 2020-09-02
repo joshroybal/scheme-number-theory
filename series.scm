@@ -1,8 +1,4 @@
-;(define compute-series
-;  (lambda (n f)
-;    (compute-series-iter n f 0)))
-
-(load "lib.scm")
+(load "lib")
 (define reciprocal (lambda (x) (/ 1. x)))
 (define square (lambda (x) (* x x)))
 (define cube (lambda (x) (* x x x)))
@@ -40,7 +36,7 @@
   (make-series-list (lambda(x)(reciprocal (cube x))) 1 1000))
 
 (define tri-series
-  (make-series-list (lambda(x)(reciprocal (triangular x))) 1 1000))
+  (make-series-list (lambda(x)(reciprocal (tri x))) 1 1000))
 
 (define fib-series
   (make-series-list (lambda(x)(reciprocal (fib x))) 1 1000))
